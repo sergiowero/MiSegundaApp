@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		D1E4E3F81F69F5EB00091D8A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D1E4E3F71F69F5EB00091D8A /* main.m */; };
 		D1E4E3FB1F69F5EB00091D8A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D1E4E3FA1F69F5EB00091D8A /* AppDelegate.m */; };
-		D1E4E3FE1F69F5EB00091D8A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D1E4E3FD1F69F5EB00091D8A /* ViewController.m */; };
+		D1E4E3FE1F69F5EB00091D8A /* Home.m in Sources */ = {isa = PBXBuildFile; fileRef = D1E4E3FD1F69F5EB00091D8A /* Home.m */; };
 		D1E4E4011F69F5EB00091D8A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1E4E3FF1F69F5EB00091D8A /* Main.storyboard */; };
 		D1E4E4041F69F5EB00091D8A /* Mi_Segunda_App.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D1E4E4021F69F5EB00091D8A /* Mi_Segunda_App.xcdatamodeld */; };
 		D1E4E4061F69F5EB00091D8A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1E4E4051F69F5EB00091D8A /* Assets.xcassets */; };
@@ -21,8 +21,8 @@
 		D1E4E3F71F69F5EB00091D8A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D1E4E3F91F69F5EB00091D8A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D1E4E3FA1F69F5EB00091D8A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		D1E4E3FC1F69F5EB00091D8A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		D1E4E3FD1F69F5EB00091D8A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D1E4E3FC1F69F5EB00091D8A /* Home.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Home.h; sourceTree = "<group>"; };
+		D1E4E3FD1F69F5EB00091D8A /* Home.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Home.m; sourceTree = "<group>"; };
 		D1E4E4001F69F5EB00091D8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D1E4E4031F69F5EB00091D8A /* Mi_Segunda_App.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Mi_Segunda_App.xcdatamodel; sourceTree = "<group>"; };
 		D1E4E4051F69F5EB00091D8A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -41,6 +41,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D16BBA691F69F7910085A712 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				D1E4E3F91F69F5EB00091D8A /* AppDelegate.h */,
+				D1E4E3FA1F69F5EB00091D8A /* AppDelegate.m */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		D16BBA6A1F69F7A80085A712 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D1E4E3FC1F69F5EB00091D8A /* Home.h */,
+				D1E4E3FD1F69F5EB00091D8A /* Home.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
 		D1E4E3EA1F69F5EB00091D8A = {
 			isa = PBXGroup;
 			children = (
@@ -60,10 +78,8 @@
 		D1E4E3F51F69F5EB00091D8A /* Mi Segunda App */ = {
 			isa = PBXGroup;
 			children = (
-				D1E4E3F91F69F5EB00091D8A /* AppDelegate.h */,
-				D1E4E3FA1F69F5EB00091D8A /* AppDelegate.m */,
-				D1E4E3FC1F69F5EB00091D8A /* ViewController.h */,
-				D1E4E3FD1F69F5EB00091D8A /* ViewController.m */,
+				D16BBA691F69F7910085A712 /* Main */,
+				D16BBA6A1F69F7A80085A712 /* Controllers */,
 				D1E4E3FF1F69F5EB00091D8A /* Main.storyboard */,
 				D1E4E4051F69F5EB00091D8A /* Assets.xcassets */,
 				D1E4E4071F69F5EB00091D8A /* LaunchScreen.storyboard */,
@@ -153,7 +169,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D1E4E3FE1F69F5EB00091D8A /* ViewController.m in Sources */,
+				D1E4E3FE1F69F5EB00091D8A /* Home.m in Sources */,
 				D1E4E3FB1F69F5EB00091D8A /* AppDelegate.m in Sources */,
 				D1E4E3F81F69F5EB00091D8A /* main.m in Sources */,
 				D1E4E4041F69F5EB00091D8A /* Mi_Segunda_App.xcdatamodeld in Sources */,
@@ -313,6 +329,7 @@
 				D1E4E40F1F69F5EB00091D8A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
