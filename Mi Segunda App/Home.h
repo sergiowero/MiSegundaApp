@@ -11,6 +11,8 @@
 @interface Home : UIViewController
 
 @property (strong, nonatomic) IBOutlet UILabel *lblWelcome;
+@property (strong, nonatomic) IBOutlet UILabel *lblResult;
+@property (strong, nonatomic) IBOutlet UITextField *txtUser;
 
 @end
 
