@@ -18,12 +18,35 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    self.names  = @[
+               @"First",
+               @"Second",
+               @"Third",
+               @"Four",
+               @"Five"];
+    
+    self.colors  = @[
+                [UIColor blackColor],
+                [UIColor blueColor],
+                [UIColor redColor],
+                [UIColor purpleColor],
+                [UIColor grayColor]];
+    
+    self.index = 1;
+    
+    self.lblWelcome.text = @"First";
 }
 
 
 //Action methods
 - (IBAction)changeButtonPressed:(id)sender {
-    self.lblWelcome.text = @"Mentira!";
+    self.lblWelcome.text = [self.names objectAtIndex : self.index];
+    self.lblWelcome.textColor = [self.colors objectAtIndex : self.index];
+    
+    self.index++;
+    if(self.index > 4)
+        self.index = 0;
 
 }
 

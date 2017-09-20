@@ -14,5 +14,10 @@
 @property (strong, nonatomic) IBOutlet UILabel *lblResult;
 @property (strong, nonatomic) IBOutlet UITextField *txtUser;
 
+@property NSArray *names;
+@property NSArray *colors;
+
+@property int index;
+
 @end
 
